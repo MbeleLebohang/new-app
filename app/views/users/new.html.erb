@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign up</title>
+</head>
+<body>
+	<h2>This is a sign up page ok!</h2>
+		
+	<%= form_for @user do |f| %>
+		<div class="sign-up" >
+		    <td><%= f.label 	 :fullnames %></td>
+		    <td><%= f.text_field :fullnames %></td>
+		</div>
+
+		<div>
+		    <td><%= f.label 	  :email %></td>
+		    <td><%= f.email_field :email %> </td>
+		</div>
+		<div>
+			<td><%= f.label 	 :password%></td>
+			<td><%= f.text_field :password%></td>
+		</div>
+
+	  	<div>
+	    	<%= f.submit "Sign Up"%>
+	  	</div>
+	<% end %>
+</body>
+</html>
