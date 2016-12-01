@@ -9,6 +9,22 @@
   </head>
 
   <body>
-    <%= yield %>
+	<header class='clearfix'>
+	  <div class="left-nav">
+	    <ul>
+	      <li><%= link_to "HOME", users_path %></li>
+	    </ul>
+	  </div>
+	  <div class="right-nav">
+	    <ul>
+	      <li><%= link_to "SIGN UP", new_users_path %></li>
+	    </ul>
+	  </div>
+	</header>
+
+  	<div class = 'content'>
+  		<%= yield %>		
+  	</div>
+    
   </body>
 </html>
